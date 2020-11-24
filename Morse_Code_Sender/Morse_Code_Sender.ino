@@ -1,9 +1,6 @@
-
-int pause = 350;
-int pulse = 350;
-int start = 1000;
-
-int led_on_time;
+#define pause 350
+#define pulse 350
+#define start 1000
 
 void blink_led(int counter){
   for(int i = 0; i < counter; i++){
