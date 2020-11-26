@@ -2,5 +2,5 @@
     "programmer": "AVRISP mkII",
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
-    "sketch": "Morse_Code_Sender\\Morse_Code_Sender.ino"
+    "sketch": "Morse_Code\\Morse_Code.ino"
 }
