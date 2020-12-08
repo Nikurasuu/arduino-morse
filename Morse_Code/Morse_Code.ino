@@ -75,7 +75,7 @@ void read_letter(int number){
     Serial.print("y");
   }
   if(number == 25){
-    Serial.println("x");
+    Serial.print("x");
   }
   if(number == 26){
     Serial.print("q");
@@ -104,7 +104,7 @@ void loop() {
     if(led_on_time > 240){
       read_letter(low_counter);
       low_counter = 0;
-    } else if(led_on_time > 94) {
+    } else if(led_on_time > 74) {
       low_counter++;
     }
     led_on_time = 0;

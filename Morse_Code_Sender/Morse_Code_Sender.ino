@@ -1,5 +1,5 @@
-#define pause 12
-#define pulse 12
+#define pause 10
+#define pulse 10
 #define start 20
 
 char rx_byte = 0;
@@ -15,7 +15,7 @@ void blink_led(int counter) {
 }
 
 void print_letter(String letter) {
-  Serial.print("sending: "); Serial.println(letter);
+  //Serial.print("sending: "); Serial.println(letter);
   if (letter == "e") {
     digitalWrite(2, HIGH);
     delay(start);
@@ -172,13 +172,14 @@ void loop() {
     }
     else {
       print_letter("skip");
+      Serial.println("sending: " + rx_str);
       for (auto x : rx_str)
       {
         String y = String(x);
         print_letter(y);
       }
       print_letter("skip");
-      Serial.println(rx_str);
+      Serial.println("done: " + rx_str);
       rx_str = "";
     }
   }
