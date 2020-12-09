@@ -160,6 +160,7 @@ void print_letter(String letter) {
 
 void setup() {
   Serial.begin(9600);
+  Serial.println("Warte auf Eingabe.");
   pinMode(2, OUTPUT);
 }
 
